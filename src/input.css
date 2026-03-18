@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
+
+@font-face {
+    font-family: 'jakarta';
+    src: url('../fonts/PlusJakartaSans-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'jakarta';
+    src: url('../fonts/PlusJakartaSans-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'jakarta';
+    src: url('../fonts/PlusJakartaSans-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'jakarta';
+    src: url('../fonts/PlusJakartaSans-Regular.ttf');
+    font-weight: 400;
+}
+
+.jakarta-700{
+    font-family: 'jakarta';
+    font-weight: 700;
+}
+
+.jakarta-600{
+    font-family: 'jakarta';
+    font-weight: 600;
+}
+
+.jakarta-500{
+    font-family: 'jakarta';
+    font-weight: 500;
+}
+
+.jakarta-400{
+    font-family: 'jakarta';
+    font-weight: 400;
+}
