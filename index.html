@@ -8,8 +8,8 @@
     <!-- TAILWIND CSS!!! -->
     <link rel="stylesheet" href="./src/output.css">
 
-    <!-- FONTAWESOME!!! -->
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <!-- FONTAWESOME ICONS!!! -->
+    <script src="https://kit.fontawesome.com/00796451d6.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-neutral-100">
@@ -17,35 +17,39 @@
     <!-- HEADER START!!! -->
 
     <header>
-        <aside class="bg-white fixed h-full p-10 flex flex-col justify-between border-2 border-neutral-300">
+        
+        <aside id="asideFull" class="bg-white fixed h-full p-10 flex flex-col justify-between border-2 border-neutral-300 -left-full transition-all duration-400 ease-in-out">
 
-            <div class="flex flex-col items-center gap-10">
+            <div class="flex flex-col items-start gap-10 relative">
 
-                <a href="#"><img src="./img/NFT LOGO.png" alt="Crypto Logo"></a>
+                <i id="asideBurger" class="fa-solid fa-bars text-xl text-neutral-400 fixed left-4 top-4 z-50"></i>
 
-                <ul class="flex flex-col gap-5">
+                <a href="#" class="mt-10"><img src="./img/NFT LOGO.png" alt="Crypto Logo"></a>
 
-                    <li class="text-lg text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10"><a href="#"><i class="fa-duotone fa-solid fa-grid-2 text-2xl"></i>Home</a></li>
+                <ul class="flex flex-col gap-7">
 
-                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#"><i class="fa-light fa-store text-2xl"></i>Store</a></li>
+                    <li class="text-lg text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10"><a href="#"><i class="fa-solid fa-table fa-grid-2 text-xl pr-3"></i>Home</a></li>
 
-                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#"><i class="fa-light fa-folder text-2xl"></i>Folder</a></li>
+                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#" ><i class="fa-solid fa-store text-xl pr-3"></i>Store</a></li>
 
-                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#"><i class="fa-regular fa-gavel text-2xl"></i>Hammer</a></li>
+                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#" ><i class="fa-solid fa-folder text-xl pr-3"></i>Folder</a></li>
 
-                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#"><i class="fa-thin fa-box-heart text-2xl"></i>Heart</a></li>
+                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#" ><i class="fa-solid fa-gavel text-xl pr-3"></i>Hammer</a></li>
 
-                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#"><i class="fa-light fa-message-captions text-2xl"></i>Message</a></li>
+                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#" ><i class="fa-regular fa-heart text-xl pr-3"></i>Heart</a></li>
+
+                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#" ><i class="fa-regular fa-message text-xl pr-3"></i>Message</a></li>
                     
-                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#"><i class="fa-regular fa-gear text-2xl"></i>Settings</a></li>
+                    <li class="text-lg text-neutral-400 transition duration-300 ease-in-out hover:text-indigo-700 relative after:absolute after:bg-indigo-700 after:h-full after:w-0.5 after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><a href="#" ><i class="fa-solid fa-gear text-xl pr-3"></i>Settings</a></li>
 
                 </ul>
 
             </div>
 
-            <a href="#" class="text-lg text-neutral-600 transition-all duration-300 ease-in-out hover:text-red-600 hover:text-shadow-[0px_0px_10px] text-shadow-red-600 relative after:absolute after:bg-red-600 after:w-0.5 after:h-full after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><i class="fa-duotone fa-regular fa-arrow-right-from-bracket text-2xl"></i> Log Out</a>
+            <a href="#" class="text-lg text-neutral-600 transition-all duration-300 ease-in-out hover:text-red-600 hover:text-shadow-[0px_0px_10px] text-shadow-red-600 relative after:absolute after:bg-red-600 after:w-0.5 after:h-full after:-right-10 after:opacity-0 hover:after:opacity-100 after:transition after:duration-300 after:ease-in-out"><i class="fa-solid fa-arrow-right-from-bracket text-xl"></i> Log Out</a>
             
         </aside>
+        
     </header>
 
     <!-- HEADER END!!! -->
@@ -59,7 +63,7 @@
         
         <main class="ml-55">
 
-            <section class="pt-10 flex justify-between items-center">
+            <section class="pt-10 flex items-center">
                 
                 <div>
 
@@ -69,25 +73,25 @@
 
                 </div>
 
-                <div class="flex items-center gap-5">
+                <div class="flex items-center gap-5 ml-24">
 
                     <div class="relative">
 
-                        <input type="text" placeholder="Search something..." class="bg-[#e1e2e7] w-80 h-14 rounded-xl pl-16 jakarta-400 placeholder:text-neutral-400 focus:outline focus:outline-indigo-700 focus:placeholder:text-indigo-700 focus:text-indigo-700">
+                        <input type="text" placeholder="Search something..." class="bg-[#eaebf1] w-80 h-14 rounded-xl pl-16 jakarta-400 placeholder:text-neutral-400 focus:outline focus:outline-indigo-700 focus:placeholder:text-indigo-700 focus:text-indigo-700 pr-10">
                         
-                        <i class="fa-light fa-magnifying-glass text-2xl text-neutral-500 absolute top-4 left-5"></i>
+                        <i class="fa-solid fa-magnifying-glass text-xl text-neutral-400 absolute top-5 left-6"></i>
 
                     </div>
 
-                    <a href="#" class="border border-neutral-300 px-5 py-4 rounded-full text-neutral-500 hover:text-indigo-700 hover:border-indigo-700 transition duration-400 ease-in-out text-xl"><i class="fa-light fa-sliders-simple"></i></a>
+                    <a href="#" class="border border-neutral-300 w-12 h-12 flex items-center justify-center rounded-full text-neutral-300 hover:text-indigo-700 hover:border-indigo-700 transition duration-400 ease-in-out text-xl"><i class="fa-solid fa-left-right"></i></a>
                     
-                    <a href="#" class="border border-neutral-300 px-5 py-4 rounded-full text-neutral-500 hover:text-indigo-700 hover:border-indigo-700 transition duration-400 ease-in-out text-xl animate-pulse"><i class="fa-light fa-bell relative after:absolute after:w-2 after:h-2 after:bg-indigo-700 after:rounded-full after:-right-1 after:-top-1 after:animate-bounce"></i></a>
+                    <a href="#" class="border border-neutral-300 w-12 h-12 flex items-center justify-center rounded-full text-neutral-300 hover:text-indigo-700 hover:border-indigo-700 transition duration-400 ease-in-out text-xl animate-pulse"><i class="fa-regular fa-bell relative after:absolute after:w-2 after:h-2 after:bg-indigo-700 after:rounded-full after:-right-1 after:-top-1 after:animate-bounce"></i></a>
 
                 </div>
 
             </section>
 
-            <section class="flex gap-10 items-center justify-between">
+            <section class="flex gap-10 items-center">
                 
                 <div class="mt-10 relative">
 
@@ -179,6 +183,8 @@
 
                         <div>
 
+                            <!-- LIKE!!! -->
+
                             <div class="flex items-center justify-between">
 
                                 <div class="flex items-center gap-3">
@@ -195,9 +201,12 @@
 
                                 </div>
 
-                                <i class="fa-solid fa-heart bg-[#F4F5FB] text-xl w-10 h-10 text-center pt-3 rounded-sm mr-1 hover:text-red-600 duration-300 ease-in-out cursor-grab"></i>
+                                <i class="likeBtn fa-solid fa-heart bg-[#F4F5FB] text-xl w-10 h-10 text-center pt-3 rounded-sm mr-1 duration-300 ease-in-out cursor-pointer"></i>
 
                             </div>
+
+                            <!-- LIKE END!!! -->
+                            <!-- ===================== -->
 
                             <div class="relative group">
                                 
@@ -239,6 +248,8 @@
 
                         <div>
 
+                            <!-- LIKE!!! -->
+
                             <div class="flex items-center justify-between">
 
                                 <div class="flex items-center gap-3">
@@ -255,9 +266,12 @@
 
                                 </div>
 
-                                <i class="fa-solid fa-heart bg-[#F4F5FB] text-xl w-10 h-10 text-center pt-3 rounded-sm mr-1 hover:text-red-600 duration-300 ease-in-out cursor-grab"></i>
+                                <i class="likeBtn fa-solid fa-heart bg-[#F4F5FB] text-xl w-10 h-10 text-center pt-3 rounded-sm mr-1 duration-300 ease-in-out cursor-pointer"></i>
 
                             </div>
+
+                            <!-- LIKE END!!! -->
+                            <!-- ======================== -->
 
                             <div class="relative group">
                                 
@@ -299,6 +313,8 @@
 
                         <div>
 
+                            <!-- LIKE!!! -->
+
                             <div class="flex items-center justify-between">
 
                                 <div class="flex items-center gap-3">
@@ -315,9 +331,12 @@
 
                                 </div>
 
-                                <i class="fa-solid fa-heart bg-[#F4F5FB] text-xl w-10 h-10 text-center pt-3 rounded-sm mr-1 hover:text-red-600 duration-300 ease-in-out cursor-grab"></i>
+                                <i class="likeBtn fa-solid fa-heart bg-[#F4F5FB] text-xl w-10 h-10 text-center pt-3 rounded-sm mr-1 duration-300 ease-in-out cursor-pointer"></i>
 
                             </div>
+
+                            <!-- LIKE END!!! -->
+                            <!-- =========================== -->
 
                             <div class="relative group">
                                 
@@ -402,9 +421,9 @@
 
                 <button type="submit" class="bg-[#3772FF] rounded-sm w-28 h-12 jakarta-600 text-sm text-white hover:bg-white hover:text-indigo-700 border-2 border-[#3772FF] hover:border-indigo-700 transition duration-500 ease-in-out hover:shadow-[0px_10px_10px] shadow-indigo-700">Follow +</button>
 
-                <i class="fa-light fa-upload text-neutral-400 text-xl border-2 border-neutral-200 rounded-full p-3"></i>
+                <div class="w-11 h-11 flex items-center justify-center border-neutral-200 border-2 rounded-full"><i class="fa-solid fa-upload text-neutral-400"></i></div>
 
-                <i class="fa-regular fa-ellipsis text-neutral-400 text-xl border-2 border-neutral-200 rounded-full p-3"></i>
+                <div class="w-11 h-11 flex items-center justify-center border-neutral-200 border-2 rounded-full"><i class="fa-solid fa-ellipsis text-neutral-400"></i></div>
 
             </div>
 
@@ -434,7 +453,7 @@
 
                 </div>
 
-                <i class="fa-light fa-plus text-blue-700 bg-neutral-200 p-2 rounded-sm"></i>
+                <i class="fa-solid fa-plus text-blue-700 bg-neutral-200 p-2 rounded-sm"></i>
 
             </div>
 
@@ -462,7 +481,7 @@
 
                 </div>
 
-                <i class="fa-light fa-plus text-blue-700 bg-neutral-200 p-2 rounded-sm"></i>
+                <i class="fa-solid fa-plus text-blue-700 bg-neutral-200 p-2 rounded-sm"></i>
 
             </div>
 
@@ -490,7 +509,7 @@
 
                 </div>
 
-                <i class="fa-light fa-plus text-blue-700 bg-neutral-200 p-2 rounded-sm"></i>
+                <i class="fa-solid fa-plus text-blue-700 bg-neutral-200 p-2 rounded-sm"></i>
 
             </div>
 
@@ -518,7 +537,7 @@
 
                 </div>
 
-                <i class="fa-light fa-plus text-blue-700 bg-neutral-200 p-2 rounded-sm"></i>
+                <i class="fa-solid fa-plus text-blue-700 bg-neutral-200 p-2 rounded-sm"></i>
 
             </div>
 
@@ -529,5 +548,9 @@
 
     </div>
 
+
+
+    <!-- MAIN JS!!! -->
+    <script type="module" src="./src/js/main.js"></script>
 </body>
 </html>
