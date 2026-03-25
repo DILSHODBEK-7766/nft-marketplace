@@ -8,3 +8,4 @@ asideBurger.addEventListener("click", () =>{
     asideFull.classList.toggle("left-0");
 
 });
+
